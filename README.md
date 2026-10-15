@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bitcoin Price Prediction — Đồ án học tập
 
 Website dự đoán giá BTC (BTCUSDT) bằng Machine Learning (Linear Regression) kết hợp
@@ -223,3 +224,7 @@ Phần khung (scaffold) này đã hoàn chỉnh về kiến trúc, DB, API, ML b
 7. Nếu muốn thử Simple RNN thay Linear Regression: xem ghi chú ở mục 3.
 
 Chúc bạn hoàn thành đồ án tốt! 🚀
+=======
+# btc-price-prediction-ml-sentiment
+Bitcoin price prediction using machine learning and sentiment analysis
+>>>>>>> 4c89ceafe92e230df0cb400de1475d9a3af2dc7f
