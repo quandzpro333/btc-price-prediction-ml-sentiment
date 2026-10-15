@@ -1,0 +1,85 @@
+# Dependencies and package managers
+node_modules/
+frontend/node_modules/
+/.pnpm-store/
+.npm/
+
+# Python virtual environments and packaging output
+venv/
+.venv/
+backend/venv/
+ml/.venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+.tox/
+.nox/
+pip-wheel-metadata/
+
+# Python caches and test tooling
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Next.js, frontend build output, and common tool caches
+.next/
+out/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# Logs and local runtime output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Jupyter and ML-generated temporary output
+.ipynb_checkpoints/
+ml/checkpoints/
+ml/runs/
+ml/logs/
+ml/tensorboard/
+ml/mlruns/
+ml/wandb/
+ml/.cache/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Operating-system files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
