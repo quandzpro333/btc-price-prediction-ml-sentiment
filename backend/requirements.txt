@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic
+python-dotenv
+sqlalchemy
+pandas
+numpy
+scikit-learn
+joblib
+google-genai
+apscheduler

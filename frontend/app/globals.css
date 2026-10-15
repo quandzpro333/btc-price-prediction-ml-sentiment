@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A0E14;
+  color: #E8EDF2;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== Ticker Tape — hiệu ứng chạy ngang liên tục (marquee) ===== */
+.ticker-scroll {
+  animation: ticker-scroll 30s linear infinite;
+}
+.ticker-scroll:hover {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== Flash hiệu ứng khi giá thay đổi — giống bảng điện sàn giao dịch ===== */
+.flash-up {
+  animation: flash-up-anim 600ms ease-out;
+}
+.flash-down {
+  animation: flash-down-anim 600ms ease-out;
+}
+@keyframes flash-up-anim {
+  0% {
+    background-color: rgba(0, 255, 156, 0.25);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes flash-down-anim {
+  0% {
+    background-color: rgba(255, 59, 92, 0.25);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Tôn trọng người dùng bật "reduced motion" trong hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-scroll {
+    animation: none;
+  }
+  .flash-up,
+  .flash-down {
+    animation: none;
+  }
+}
